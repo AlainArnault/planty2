@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne', sans-serif;
+}
+
+p , a {
+    color: black;
+    font-weight: 400;
+}
+
+/* HEADER */
+/* Modif hauteur header */
+#site-header {
+    height: 80px;
+}
+
+/* Modif taille logo */
+.header-titles img {
+    width: 201px;
+}
+
+#site-header > div {
+height: 80px;
+}
+
+/* Modif Menu */
+li.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nous-recontrer {
+    width: 200px;
+    height: 80px;
+}
+
+.nous-rencontrer > a {
+    color: black !important;
+    font-weight: 400;
+    font-size: 16px;
+}
+.commander {
+    background-color: #DC9F96;
+    width: 236px;
+    height: 80px;
+}
+
+.commander > a {
+    color: white !important;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* FOOTER */
+/* Modif hauteur footer*/
+#site-footer {
+    height: 60px;
+}
+
+/* Modif Menu*/
+.mentions-legales > a {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Masquage des titres de page */
+.entry-header {
+    display: none;
+}
+
+/* Masquage du widget de footer */
+body > div.footer-nav-widgets-wrapper.header-footer-group {
+    display: none;
+}
