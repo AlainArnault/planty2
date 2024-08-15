@@ -10,9 +10,17 @@ p , a {
 }
 
 /* HEADER */
-/* Modif hauteur header */
 #site-header {
     height: 80px;
+}
+
+#site-header > div {
+    max-width: 1440px;
+}
+
+/* Masquage des titres de page */
+.entry-header {
+    display: none;
 }
 
 /* Modif taille logo */
@@ -66,12 +74,45 @@ li.menu-item {
     font-size: 16px;
 }
 
-/* Masquage des titres de page */
-.entry-header {
-    display: none;
-}
-
 /* Masquage du widget de footer */
 body > div.footer-nav-widgets-wrapper.header-footer-group {
     display: none;
+}
+
+/* ARRONDIS FONDS BEIGE */
+.fond-beige {
+    border-radius: 0% 0% 80% 80% / 0% 0% 10% 10% !important;
+}
+
+/* ACCUEIL */
+/*Superposer la canette sur les feuilles*/
+#post-8 > div.post-inner > div > div > div.wp-block-columns.alignwide.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+    position: relative;
+    width: 100%;
+    /*max-width: 600px;*/
+    margin: 0 auto;
+}
+
+#post-8 > div.post-inner > div > div > div.wp-block-columns.alignwide.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex > img {
+    width: 100%;
+    height: auto;
+}
+
+.feuilleg {
+    position: absolute;
+    transform: translate(78%, 32%);
+    scale : 1.1;
+    z-index: 2;
+}
+
+.feuilled {
+    position: absolute;
+    transform: translate(-61%, 32%);
+    scale: 1.1;
+    z-index: 2;    
+}
+
+.canette {
+    position: relative;
+    z-index: 3;
 }
